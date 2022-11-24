@@ -3,11 +3,11 @@ pipeline{
     stages{
         stage('Batch Job'){
             steps{
-                bat """
-                    dir
-                    cd
-                    ping www.google.com
-                    """
+                sh """
+                    pwd
+                    
+            
+                   """
             }
         }
     }
